@@ -1,0 +1,43 @@
+{
+  "input": {
+    "path": "gameFiles/DBTalkData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBTalkData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "charId": "int24",
+    "talkType": "int24",
+    "talk1Param1": "int24",
+    "talk2Param1": "int24",
+    "talk3Param1": "int24",
+    "talk4Param1": "int24",
+    "talk1Param2": "int24",
+    "talk2Param2": "int24",
+    "talk3Param2": "int24",
+    "talk4Param2": "int24",
+    "talk1Param3": "int24",
+    "talk2Param3": "int24",
+    "talk3Param3": "int24",
+    "talk4Param3": "int24",
+    "talk1Param4": "int24",
+    "talk2Param4": "int24",
+    "talk3Param4": "int24",
+    "talk4Param4": "int24",
+    "talk1Param5": "int24",
+    "talk2Param5": "int24",
+    "talk3Param5": "int24",
+    "talk4Param5": "int24",
+    "talk1Param6": "int24",
+    "talk2Param6": "int24",
+    "talk3Param6": "int24",
+    "talk4Param6": "int24",
+    "talk1Param7": "int24",
+    "talk2Param7": "int24",
+    "talk3Param7": "int24",
+    "talk4Param7": "int24"
+  }
+}

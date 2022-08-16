@@ -1,0 +1,26 @@
+{
+  "input": {
+    "path": "gameFiles/DBExpData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBExpData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "level": "int24",
+    "exp1": "int24",
+    "exp2": "int24",
+    "exp3": "int24",
+    "exp4": "int24",
+    "exp5": "int24",
+    "exp6": "int24",
+    "exp7": "int24",
+    "exp8": "int24",
+    "exp9": "int24",
+    "exp10": "int24",
+    "exp11": "int24",
+    "exp12": "int24",
+    "exp13": "int24"
+  }
+}

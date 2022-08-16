@@ -1,0 +1,42 @@
+{
+  "input": {
+    "path": "gameFiles/DBBattleData.bytes",
+    "format": "surviveBinary",
+    "textPath": "gameFiles/DBBattleDataText.txt"
+  },
+  "output": {
+    "path": "userFiles/DBBattleData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "ID": "int24",
+    "Name": "string",
+    "Stage": "string",
+    "Music": "int24",
+    "Background": "int24",
+    "WinHelpText": "string",
+    "LoseHelpText": "string",
+    "Win1ID": "int24",
+    "Win1Param1": "int24",
+    "Win1Param2": "int24",
+    "Win1Param3": "int24",
+    "Win2ID": "int24",
+    "Win2Param1": "int24",
+    "Win2Param2": "int24",
+    "Win2Param3": "int24",
+    "Lose1ID": "int24",
+    "Lose1Param1": "int24",
+    "Lose1Param2": "int24",
+    "Lose1Param3": "int24",
+    "Lose2ID": "int24",
+    "Lose2Param1": "int24",
+    "Lose2Param2": "int24",
+    "Lose2Param3": "int24",
+    "Lose3ID": "int24",
+    "Lose3Param1": "int24",
+    "Lose3Param2": "int24",
+    "Lose3Param3": "int24",
+    "PlayerNum": "int24",
+    "EXP": "int24"
+  }
+}

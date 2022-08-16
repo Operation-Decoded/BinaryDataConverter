@@ -1,0 +1,16 @@
+{
+  "input": {
+    "path": "gameFiles/DBMapLoadData.bytes",
+    "format": "surviveBinary",
+    "textPath": "gameFiles/DBMapLoadDataText.txt"
+  },
+  "output": {
+    "path": "userFiles/DBMapLoadData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "mapId": "int24",
+    "assetBundle": "string"
+  }
+}

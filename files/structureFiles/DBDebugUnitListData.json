@@ -1,0 +1,21 @@
+{
+  "input": {
+    "path": "gameFiles/DBDebugUnitListData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBDebugUnitListData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "unitListId": "int24",
+    "unitId": "int24",
+    "level": "int24",
+    "equip1": "int24",
+    "equip2": "int24",
+    "skillEquip1": "int24",
+    "skillEquip2": "int24",
+    "itemId": "int24"
+  }
+}

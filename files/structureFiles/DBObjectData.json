@@ -1,0 +1,17 @@
+{
+  "input": {
+    "path": "gameFiles/DBObjectData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBObjectData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "sizeX": "int24",
+    "sizeY": "int24",
+    "height": "int24",
+    "move": "int8"
+  }
+}

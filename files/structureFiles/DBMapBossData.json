@@ -1,0 +1,18 @@
+{
+  "input": {
+    "path": "gameFiles/DBMapBossData.bytes",
+    "format": "surviveBinary",
+    "textPath": "gameFiles/DBMapBossDataText.txt"
+  },
+  "output": {
+    "path": "userFiles/DBMapBossData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "charId": "int24",
+    "objectName": "string",
+    "width": "int24",
+    "height": "int24"
+  }
+}

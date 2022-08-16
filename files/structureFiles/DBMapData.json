@@ -1,0 +1,36 @@
+{
+  "input": {
+    "path": "gameFiles/DBMapData.bytes",
+    "format": "surviveBinary",
+    "textPath": "gameFiles/DBMapDataText.txt"
+  },
+  "output": {
+    "path": "userFiles/DBMapData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "mapId": "int24",
+    "filter1TexName": "string",
+    "filter1Red": "int24",
+    "filter1Green": "int24",
+    "filter1Blue": "int24",
+    "filter1Alpha": "int24",
+    "filter1Blinking": "int24",
+    "filter2TexName": "string",
+    "filter2Red": "int24",
+    "filter2Green": "int24",
+    "filter2Blue": "int24",
+    "filter2Alpha": "int24",
+    "filter2Blinking": "int24",
+    "unit1Red": "int24",
+    "unit1Green": "int24",
+    "unit1Blue": "int24",
+    "unit2Red": "int24",
+    "unit2Green": "int24",
+    "unit2Blue": "int24",
+    "objectRed": "int24",
+    "objectGreen": "int24",
+    "objectBlue": "int24"
+  }
+}

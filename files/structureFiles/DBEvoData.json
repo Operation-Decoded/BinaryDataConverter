@@ -1,0 +1,23 @@
+{
+  "input": {
+    "path": "gameFiles/DBEvoData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBEvoData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "charId": "int24",
+    "evoId1": "int24",
+    "cost1": "int24",
+    "openId1": "int24",
+    "evoId2": "int24",
+    "cost2": "int24",
+    "openId2": "int24",
+    "evoId3": "int24",
+    "cost3": "int24",
+    "openId3": "int24"
+  }
+}

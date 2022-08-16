@@ -1,0 +1,18 @@
+{
+  "input": {
+    "path": "gameFiles/DBPartnerTalkData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBPartnerTalkData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "partnerId": "int24",
+    "talkTarget": "int24",
+    "type": "int24",
+    "param": "int24",
+    "buffId": "int24"
+  }
+}

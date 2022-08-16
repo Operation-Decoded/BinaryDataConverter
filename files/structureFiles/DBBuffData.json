@@ -1,0 +1,21 @@
+{
+  "input": {
+    "path": "gameFiles/DBBuffData.bytes",
+    "format": "surviveBinary",
+    "textPath": "gameFiles/DBBuffDataText.txt"
+  },
+  "output": {
+    "path": "userFiles/DBBuffData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "name": "string",
+    "battleDisplay": "int8",
+    "type": "int24",
+    "turn": "int8",
+    "hitHeal": "int8",
+    "param": "int24",
+    "hit": "int24"
+  }
+}

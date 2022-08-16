@@ -1,0 +1,15 @@
+{
+  "input": {
+    "path": "gameFiles/DBMapUnitDistDofData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBMapUnitDistDofData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "mapId": "int24",
+    "dist": "float"
+  }
+}

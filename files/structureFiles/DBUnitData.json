@@ -1,0 +1,35 @@
+{
+  "input": {
+    "path": "gameFiles/DBUnitData.bytes",
+    "format": "surviveBinary",
+    "textPath": "gameFiles/DBUnitDataText.txt"
+  },
+  "output": {
+    "path": "userFiles/DBUnitData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "charId": "int24",
+    "spVoice": "int8",
+    "level": "int24",
+    "aiType": "int24",
+    "aiParam": "int24",
+    "talk": "int8",
+    "pLevelSet": "int8",
+    "pLevelDist": "int24",
+    "deathless": "int8",
+    "revival": "int8",
+    "effect": "string",
+    "boss": "int8",
+    "equip1": "int24",
+    "equip2": "int24",
+    "skillEquip1": "int24",
+    "skillEquip2": "int24",
+    "exp": "int24",
+    "dropItem1": "int24",
+    "dropPercent1": "int24",
+    "dropItem2": "int24",
+    "dropPercent2": "int24"
+  }
+}

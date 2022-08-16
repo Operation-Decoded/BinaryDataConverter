@@ -1,0 +1,35 @@
+{
+  "input": {
+    "path": "gameFiles/DBEquipData.bytes",
+    "format": "surviveBinary"
+  },
+  "output": {
+    "path": "userFiles/DBEquipData.csv",
+    "format": "csv"
+  },
+  "structure": {
+    "id": "int24",
+    "buffType1": "int24",
+    "buffType2": "int24",
+    "hp": "int24",
+    "mp": "int24",
+    "atk": "int24",
+    "def": "int24",
+    "matk": "int24",
+    "mdef": "int24",
+    "speed": "int24",
+    "resistElement1": "int24",
+    "resistElement2": "int24",
+    "resistElement3": "int24",
+    "resistElement4": "int24",
+    "resistElement5": "int24",
+    "resistElement6": "int24",
+    "resistBuff1": "int24",
+    "resistBuff2": "int24",
+    "resistBuff3": "int24",
+    "resistBuff4": "int24",
+    "resistBuff5": "int24",
+    "resistBuff6": "int24",
+    "DElement": "int24"
+  }
+}
