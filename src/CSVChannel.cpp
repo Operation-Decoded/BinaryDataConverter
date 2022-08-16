@@ -9,7 +9,7 @@ CSVReader::CSVReader(boost::json::object config)
 {
     std::string path(config["path"].as_string());
 
-    if (!std::filesystem::exists(path)) throw std::exception("Input file does not exist!");
+    if (!std::filesystem::exists(path)) throw std::runtime_error("Input file does not exist!");
 
     fileStream = std::make_unique<std::ifstream>(path, std::ios::in);
     parser     = std::make_unique<aria::csv::CsvParser>(*fileStream.get());

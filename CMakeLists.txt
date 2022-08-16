@@ -28,7 +28,7 @@ add_executable (BinaryDataConverter "src/BinaryDataConverter.cpp" "src/CSVChanne
 target_link_libraries(BinaryDataConverter PRIVATE Boost::json Boost::algorithm Boost::program_options AriaCsvParser)
 
 # --- Install ---
-install(TARGETS BinaryDataConverter DESTINATION target)
-install(FILES LICENSE THIRD-PARTY-NOTICE DESTINATION target/license)
-install(FILES README.md DESTINATION target)
-install(DIRECTORY files/ DESTINATION target)
+install(TARGETS BinaryDataConverter DESTINATION BinaryDataConverter)
+install(FILES LICENSE THIRD-PARTY-NOTICE DESTINATION BinaryDataConverter/license)
+install(FILES README.md DESTINATION BinaryDataConverter)
+install(DIRECTORY files/ DESTINATION BinaryDataConverter)

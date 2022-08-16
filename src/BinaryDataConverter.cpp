@@ -81,12 +81,12 @@ void runProgram(boost::program_options::variables_map& vm)
     // parse json
     std::string path = vm["file"].as<std::string>();
 
-    if (!std::filesystem::is_regular_file(path)) throw std::exception("Structure file does not exist.");
+    if (!std::filesystem::is_regular_file(path)) throw std::runtime_error("Structure file does not exist.");
 
     std::ifstream structFile(path);
     std::stringstream contents;
     contents << structFile.rdbuf();
-    boost::json::value json = boost::json::parse(contents.view());
+    boost::json::value json = boost::json::parse(contents.str());
     auto& input             = json.as_object()["input"].as_object();
     auto& output            = json.as_object()["output"].as_object();
     auto& structure         = json.at("structure").as_object();
@@ -175,7 +175,7 @@ int main(int count, char* args[])
             return 1;
         }
     }
-    catch (std::exception& e)
+    catch (std::runtime_error& e)
     {
         std::cout << e.what() << std::endl;
         return 1;
@@ -191,7 +191,7 @@ int main(int count, char* args[])
     {
         runProgram(vm);
     }
-    catch (std::exception& ex)
+    catch (std::runtime_error& ex)
     {
         std::cout << ex.what() << std::endl;
     }

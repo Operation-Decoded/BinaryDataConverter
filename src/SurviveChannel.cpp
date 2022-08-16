@@ -12,14 +12,14 @@ SurviveReader::SurviveReader(boost::json::object config)
     std::size_t offset   = config["offset"].is_null() ? 0 : config["offset"].as_int64();
     expectedEntryCount   = config["entryCount"].is_null() ? 0 : config["entryCount"].as_int64();
 
-    if (!std::filesystem::exists(path)) throw std::exception("Input file does not exist!");
+    if (!std::filesystem::exists(path)) throw std::runtime_error("Input file does not exist!");
 
     fileStream = std::ifstream(path, std::ios::in | std::ios::binary);
     fileStream.seekg(offset);
 
     if (!textPath.empty())
     {
-        if (!std::filesystem::exists(textPath)) throw std::exception("Input file does not exist!");
+        if (!std::filesystem::exists(textPath)) throw std::runtime_error("Input file does not exist!");
 
         std::ifstream textStream(textPath, std::ios::in);
         std::string str;
