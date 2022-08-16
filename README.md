@@ -35,7 +35,8 @@ Building the project should be a simple
 $ git clone git@github.com:Operation-Decoded/BinaryDataConverter.git
 $ cd <project dir>
 $ cmake .
-$ make install```
+$ make install
+```
 
 ## Important Notice
 By default CPM.cmake will download all the dependencies, which includes Boost. This can take up to 3 GiB of disk space and take a while.
