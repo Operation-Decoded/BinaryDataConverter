@@ -24,6 +24,10 @@ public:
     virtual uint32_t readUInt24();
     virtual uint32_t readUInt32();
 
+    uint8_t readHex8() override;
+    uint16_t readHex16() override;
+    uint32_t readHex32() override;
+
     virtual float readFloat();
     virtual double readDouble();
 
@@ -56,6 +60,10 @@ public:
     virtual void writeUInt16(std::string name, uint16_t value);
     virtual void writeUInt24(std::string name, uint32_t value);
     virtual void writeUInt32(std::string name, uint32_t value);
+
+    void writeHex8(std::string name, uint8_t value);
+    void writeHex16(std::string name, uint16_t value);
+    void writeHex32(std::string name, uint32_t value);
 
     virtual void writeFloat(std::string name, float value);
     virtual void writeDouble(std::string name, double value);

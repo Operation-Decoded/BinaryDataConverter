@@ -64,6 +64,22 @@ uint32_t CSVReader::readUInt32()
     return (uint32_t)std::stoul(string);
 }
 
+uint8_t CSVReader::readHex8()
+{
+    std::string string = read();
+    return (uint8_t)std::stoul(string, nullptr, 16);
+}
+uint16_t CSVReader::readHex16()
+{
+    std::string string = read();
+    return (uint16_t)std::stoul(string, nullptr, 16);
+}
+uint32_t CSVReader::readHex32()
+{
+    std::string string = read();
+    return (uint32_t)std::stoul(string, nullptr, 16);
+}
+
 float CSVReader::readFloat()
 {
     std::string string = read();
@@ -167,6 +183,25 @@ void CSVWriter::writeUInt8(std::string name, uint8_t value) { write((uint32_t)va
 void CSVWriter::writeUInt16(std::string name, uint16_t value) { write(value); }
 void CSVWriter::writeUInt24(std::string name, uint32_t value) { write(value); }
 void CSVWriter::writeUInt32(std::string name, uint32_t value) { write(value); }
+
+void CSVWriter::writeHex8(std::string name, uint8_t value)
+{
+    std::stringstream ss;
+    ss << std::hex << std::uppercase << std::setfill('0') << std::setw(2) << static_cast<uint32_t>(value);
+    write(ss.str());
+}
+void CSVWriter::writeHex16(std::string name, uint16_t value)
+{
+    std::stringstream ss;
+    ss << std::hex << std::uppercase << std::setfill('0') << std::setw(4) << static_cast<uint32_t>(value);
+    write(ss.str());
+}
+void CSVWriter::writeHex32(std::string name, uint32_t value)
+{
+    std::stringstream ss;
+    ss << std::hex << std::uppercase << std::setfill('0') << std::setw(8) << static_cast<uint32_t>(value);
+    write(ss.str());
+}
 
 void CSVWriter::writeFloat(std::string name, float value) { write(value); }
 void CSVWriter::writeDouble(std::string name, double value) { write(value); }
