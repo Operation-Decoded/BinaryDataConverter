@@ -66,6 +66,25 @@ uint32_t BinaryReader::readUInt32()
     return val;
 }
 
+uint8_t BinaryReader::readHex8()
+{
+    uint8_t val;
+    fileStream.read(reinterpret_cast<char*>(&val), sizeof(val));
+    return val;
+}
+uint16_t BinaryReader::readHex16()
+{
+    uint16_t val;
+    fileStream.read(reinterpret_cast<char*>(&val), sizeof(val));
+    return val;
+}
+uint32_t BinaryReader::readHex32()
+{
+    uint32_t val;
+    fileStream.read(reinterpret_cast<char*>(&val), sizeof(val));
+    return val;
+}
+
 float BinaryReader::readFloat()
 {
     float val;
@@ -201,6 +220,19 @@ void BinaryWriter::writeUInt24(std::string name, uint32_t value)
     fileStream.write(reinterpret_cast<char*>(&value), 3);
 }
 void BinaryWriter::writeUInt32(std::string name, uint32_t value)
+{
+    fileStream.write(reinterpret_cast<char*>(&value), sizeof(value));
+}
+
+void BinaryWriter::writeHex8(std::string name, uint8_t value)
+{
+    fileStream.write(reinterpret_cast<char*>(&value), sizeof(value));
+}
+void BinaryWriter::writeHex16(std::string name, uint16_t value)
+{
+    fileStream.write(reinterpret_cast<char*>(&value), sizeof(value));
+}
+void BinaryWriter::writeHex32(std::string name, uint32_t value)
 {
     fileStream.write(reinterpret_cast<char*>(&value), sizeof(value));
 }

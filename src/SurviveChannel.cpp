@@ -123,6 +123,10 @@ uint32_t SurviveReader::readUInt32()
     return reverseValue(val);
 }
 
+uint8_t SurviveReader::readHex8() { throw std::runtime_error("Unimplemented Feature: SurviveReader::readHex8"); }
+uint16_t SurviveReader::readHex16() { throw std::runtime_error("Unimplemented Feature: SurviveReader::readHex16"); }
+uint32_t SurviveReader::readHex32() { throw std::runtime_error("Unimplemented Feature: SurviveReader::readHex32"); }
+
 double SurviveReader::readDouble() { return readFloat(); }
 
 std::vector<int32_t> SurviveReader::readInt24Array()
@@ -289,6 +293,10 @@ void SurviveWriter::writeUInt32(std::string name, uint32_t value)
     value = reverseValue(value);
     fileStream.write(reinterpret_cast<char*>(&value), sizeof(value));
 }
+
+void SurviveWriter::writeHex8(std::string name, uint8_t value) { throw std::runtime_error("Unimplemented Feature: SurviveReader::writeHex8"); }
+void SurviveWriter::writeHex16(std::string name, uint16_t value) { throw std::runtime_error("Unimplemented Feature: SurviveReader::writeHex16"); }
+void SurviveWriter::writeHex32(std::string name, uint32_t value) { throw std::runtime_error("Unimplemented Feature: SurviveReader::writeHex32"); }
 
 void SurviveWriter::writeDouble(std::string name, double value) { writeFloat(name, static_cast<float>(value)); }
 

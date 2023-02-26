@@ -56,6 +56,10 @@ ReadWriterMap registerReadWriter()
     map["uint24"] = std::make_shared<ReadWriteTuple<uint32_t>>(&Reader::readUInt24, &Writer::writeUInt24);
     map["uint32"] = std::make_shared<ReadWriteTuple<uint32_t>>(&Reader::readUInt32, &Writer::writeUInt32);
 
+    map["hex8"]  = std::make_shared<ReadWriteTuple<uint8_t>>(&Reader::readHex8, &Writer::writeHex8);
+    map["hex16"]  = std::make_shared<ReadWriteTuple<uint16_t>>(&Reader::readHex16, &Writer::writeHex16);
+    map["hex32"]  = std::make_shared<ReadWriteTuple<uint32_t>>(&Reader::readHex32, &Writer::writeHex32);
+
     map["float"]  = std::make_shared<ReadWriteTuple<float>>(&Reader::readFloat, &Writer::writeFloat);
     map["double"] = std::make_shared<ReadWriteTuple<double>>(&Reader::readDouble, &Writer::writeDouble);
     map["string"] = std::make_shared<ReadWriteTuple<std::string>>(&Reader::readString, &Writer::writeString);
