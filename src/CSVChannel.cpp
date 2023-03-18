@@ -188,19 +188,19 @@ void CSVWriter::writeHex8(std::string name, uint8_t value)
 {
     std::stringstream ss;
     ss << std::hex << std::uppercase << std::setfill('0') << std::setw(2) << static_cast<uint32_t>(value);
-    write(ss.str());
+    write(std::quoted(ss.str(), '\"', '\"'));
 }
 void CSVWriter::writeHex16(std::string name, uint16_t value)
 {
     std::stringstream ss;
     ss << std::hex << std::uppercase << std::setfill('0') << std::setw(4) << static_cast<uint32_t>(value);
-    write(ss.str());
+    write(std::quoted(ss.str(), '\"', '\"'));
 }
 void CSVWriter::writeHex32(std::string name, uint32_t value)
 {
     std::stringstream ss;
     ss << std::hex << std::uppercase << std::setfill('0') << std::setw(8) << static_cast<uint32_t>(value);
-    write(ss.str());
+    write(std::quoted(ss.str(), '\"', '\"'));
 }
 
 void CSVWriter::writeFloat(std::string name, float value) { write(value); }
