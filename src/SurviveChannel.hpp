@@ -25,9 +25,9 @@ public:
     virtual uint32_t readUInt24();
     virtual uint32_t readUInt32();
 
-    uint8_t readHex8();
-    uint16_t readHex16();
-    uint32_t readHex32();
+    virtual uint8_t readHex8();
+    virtual uint16_t readHex16();
+    virtual uint32_t readHex32();
 
     virtual float readFloat();
     virtual double readDouble();
